@@ -722,7 +722,7 @@ static NSString *const kConfigOpenIDRealmKey = @"GIDOpenIDRealm";
 
   NSMutableDictionary<NSString *, NSString *> *additionalParameters =
       [[NSMutableDictionary alloc] init];
-  additionalParameters[kIncludeGrantedScopesParameter] = @"true";
+  additionalParameters[kIncludeGrantedScopesParameter] = @"false";
   if (options.configuration.serverClientID) {
     additionalParameters[kAudienceParameter] = options.configuration.serverClientID;
   }
